@@ -323,6 +323,5 @@
       $("#myModal").modal("show");
       $(".ivite-name").html(qs.nama);
     }
-    console.log(qs.nama, qs.tempat);
   });
 })();
