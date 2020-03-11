@@ -318,10 +318,9 @@
         .addEventListener("touchend", tapOrClick, false);
 
       function tapOrClick(e) {
-        var mp3 = e.target;
-        if (mp3.parentNode.getElementsByTagName("mySound")[0].paused) {
-          mp3.parentNode.getElementsByTagName("mySound")[0].play();
-        } 
+        if (document.getElementById("mySound").paused) {
+          document.getElementById("mySound").play();
+        }
       }
     }
   });
