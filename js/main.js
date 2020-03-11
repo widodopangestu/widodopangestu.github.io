@@ -319,7 +319,9 @@
 
       function tapOrClick(e) {
         var mp3 = e.target;
-        mp3.parentNode.getElementsByTagName("mySound")[0].play();
+        if (mp3.parentNode.getElementsByTagName("mySound")[0].paused) {
+          mp3.parentNode.getElementsByTagName("mySound")[0].play();
+        } 
       }
     }
   });
