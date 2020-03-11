@@ -28,7 +28,7 @@ body {
 }
 
 a {
-  color: #ff847c;
+  color: #e40d2d;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -36,7 +36,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ff847c;
+  color: #e40d2d;
   outline: none;
 }
 
@@ -88,7 +88,7 @@ h6 {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #qbootstrap-header .navbar-brand {
-    color: #ff847c !important;
+    color: #e40d2d !important;
   }
   #qbootstrap-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -97,7 +97,7 @@ h6 {
     transition: 0.3s;
   }
   #qbootstrap-header #navbar li a:hover {
-    color: #ff847c !important;
+    color: #e40d2d !important;
   }
   #qbootstrap-header #navbar li a span:before {
     background: transparent !important;
@@ -105,7 +105,7 @@ h6 {
   #qbootstrap-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #ff847c !important;
+    color: #e40d2d !important;
   }
   #qbootstrap-header #navbar li.active a span:before {
     visibility: visible;
@@ -134,7 +134,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ff847c;
+  background-color: #e40d2d;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -187,7 +187,7 @@ h6 {
   top: 0;
 }
 #qbootstrap-header.navbar-fixed-top .navbar-brand {
-  color: #ff847c;
+  color: #e40d2d;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
@@ -196,12 +196,12 @@ h6 {
   transition: 0.3s;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a:hover {
-  color: #ff847c;
+  color: #e40d2d;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #ff847c;
+  color: #e40d2d;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -230,7 +230,7 @@ h6 {
   color: #adadad;
 }
 #qbootstrap-header .navbar-default .brand-slogan em {
-  color: #ff847c;
+  color: #e40d2d;
   font-style: normal;
 }
 #qbootstrap-header a {
@@ -257,11 +257,11 @@ h6 {
   padding: 0;
 }
 .section-heading.colored .svg {
-  fill: #ff847c;
+  fill: #e40d2d;
 }
 .section-heading h2 {
   font-size: 80px;
-  color: #ff847c;
+  color: #e40d2d;
   display: block;
   padding-bottom: 20px;
   line-height: 1.5;
@@ -512,7 +512,7 @@ h6 {
 }
 #qbootstrap-slider-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
-  background: #ff847c;
+  background: #e40d2d;
 }
 #qbootstrap-slider-hero .flexslider .flex-direction-nav {
   display: none;
@@ -682,7 +682,7 @@ h6 {
   .slider-text
   > .slider-text-inner
   .btn:hover {
-  background: #ff847c !important;
+  background: #e40d2d !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -698,7 +698,7 @@ h6 {
 #qbootstrap-couple h3 {
   font-size: 34px;
   font-family: "Clicker Script", cursive;
-  color: #ff847c;
+  color: #e40d2d;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple h3 {
@@ -706,17 +706,17 @@ h6 {
   }
 }
 #qbootstrap-couple span {
-  color: #ff847c;
+  color: #e40d2d;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 14px;
-  border: 1px solid rgba(255, 132, 124, 0.3);
+  border: 1px solid #ff1493;
   padding: 2px 5px;
 }
 #qbootstrap-couple .amp-center {
   font-size: 60px;
   margin-top: 100%;
-  color: #ff847c;
+  color: #e40d2d;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple .amp-center {
@@ -724,7 +724,7 @@ h6 {
   }
 }
 #qbootstrap-couple .amp-center .colored .svg {
-  fill: #ff847c;
+  fill: #e40d2d;
 }
 
 .qbootstrap-bg {
@@ -810,7 +810,7 @@ h6 {
   left: 10px;
   right: 10px;
   content: "";
-  background: #f4f3e2;
+  background: #a5cef7;
   z-index: -1;
 }
 .couple.bride {
@@ -842,7 +842,7 @@ h6 {
   z-index: 1;
 }
 .couple .desc h2 {
-  color: #ff847c;
+  color: #e40d2d;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -937,7 +937,7 @@ h6 {
   left: 10px;
   right: 10px;
   content: "";
-  background: #f4f3e2;
+  background: #a5cef7;
   z-index: -1;
 }
 .timeline > li > .timeline-panel .overlay.overlay-2 {
@@ -991,7 +991,7 @@ h6 {
 .timeline-title {
   margin-top: 0;
   font-size: 34px;
-  color: #ff847c;
+  color: #e40d2d;
   margin-bottom: 30px;
 }
 
@@ -1054,7 +1054,7 @@ h6 {
 }
 
 #qbootstrap-testimonials {
-  background: #ff847c;
+  background: #e40d2d;
   z-index: 0;
 }
 #qbootstrap-testimonials .overlay {
@@ -1132,7 +1132,7 @@ h6 {
   width: 56px;
   height: 56px;
   margin-top: -30px;
-  background: #ff847c;
+  background: #e40d2d;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1245,12 +1245,12 @@ h6 {
   left: 10px;
   right: 10px;
   content: "";
-  background: #f4f3e2;
+  background: #a5cef7;
   z-index: -1;
 }
 .wedding-events .desc h3 {
   font-size: 40px;
-  color: #ff847c;
+  color: #e40d2d;
   display: block;
   margin-bottom: 40px;
 }
@@ -1277,7 +1277,7 @@ h6 {
 .wedding-events .desc .icon i {
   color: #fff;
   padding: 15px;
-  background: #ff847c;
+  background: #e40d2d;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1365,7 +1365,7 @@ h6 {
 #qbootstrap-started .btn {
   height: 54px;
   border: none !important;
-  background: #ff847c;
+  background: #e40d2d;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1481,7 +1481,7 @@ h6 {
   bottom: 0;
   height: 2px;
   width: 30px;
-  background: #ff847c;
+  background: #e40d2d;
 }
 #qbootstrap-press .qbootstrap-press-item .qbootstrap-press-img {
   position: absolute;
@@ -1508,7 +1508,7 @@ h6 {
 }
 .qbootstrap-nav-toggle.active i::before,
 .qbootstrap-nav-toggle.active i::after {
-  background: #ff847c;
+  background: #e40d2d;
 }
 .qbootstrap-nav-toggle:hover,
 .qbootstrap-nav-toggle:focus,
@@ -1524,11 +1524,11 @@ h6 {
   *display: inline;
   width: 25px;
   height: 3px;
-  color: #ff847c;
+  color: #e40d2d;
   font: bold 14px/0.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #ff847c;
+  background: #e40d2d;
   transition: all 0.2s ease-out;
 }
 .qbootstrap-nav-toggle i::before,
@@ -1536,7 +1536,7 @@ h6 {
   content: "";
   width: 25px;
   height: 3px;
-  background: #ff847c;
+  background: #e40d2d;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1643,7 +1643,7 @@ h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #ff847c;
+  background: #e40d2d;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
@@ -1652,7 +1652,7 @@ h6 {
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
   box-shadow: none;
-  background: #ff847c;
+  background: #e40d2d;
 }
 .btn:hover,
 .btn:active,
@@ -1698,11 +1698,11 @@ h6 {
   border-bottom: none;
 }
 .social li a.social-box {
-  background: #ff847c;
+  background: #e40d2d;
   color: #fff;
 }
 .social li a.social-circle {
-  background: #ff847c;
+  background: #e40d2d;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1713,11 +1713,11 @@ h6 {
   background: #393e46 !important;
 }
 .social.social-box a {
-  background: #ff847c;
+  background: #e40d2d;
   color: #fff;
 }
 .social.social-circle a {
-  background: #ff847c;
+  background: #e40d2d;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1777,7 +1777,7 @@ h6 {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #ff847c;
+  border-color: #e40d2d;
 }
 
 .js .animate-box {
