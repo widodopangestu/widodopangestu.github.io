@@ -307,6 +307,8 @@
   }
   // Document on load.
   $(function() {
+    console.log("Document on load");
+    NProgress.start();
     burgerMenu();
     testimonialCarousel();
     sliderMain();
@@ -325,10 +327,6 @@
     }
   });
 })();
-$(document).ready(function() {
-  NProgress.start();
-  console.log("document ready occurred!");
-});
 
 $(window).load(function() {
   NProgress.done();
