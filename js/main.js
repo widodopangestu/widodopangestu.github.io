@@ -263,6 +263,24 @@
     }
   };
 
+  var load_wishes = function(firebase) {
+    firebase
+      .database()
+      .ref("/wishes/")
+      .once("value")
+      .then(function(snapshot) {
+        $("#container-wishes").empty();
+        snapshot.forEach(function(childNodes) {
+          var wish_dom = $(".wish-message-item")
+            .first()
+            .clone();
+          wish_dom.find(".wish-message").html(childNodes.val().wish);
+          wish_dom.find(".wish-author").html(childNodes.val().nama);
+          $("#container-wishes").append(wish_dom.show());
+        });
+      });
+  };
+
   function parse_query_string(query) {
     var vars = query.split("&");
     var query_string = {};
@@ -285,6 +303,19 @@
     return query_string;
   }
   // Document on load.
+
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCQzj146hVPxeHuPeXW9Ti3_Qq4AkytPAI",
+    authDomain: "dianwidodo-cad38.firebaseapp.com",
+    databaseURL: "https://dianwidodo-cad38.firebaseio.com",
+    projectId: "dianwidodo-cad38",
+    storageBucket: "dianwidodo-cad38.appspot.com",
+    messagingSenderId: "705240339969",
+    appId: "1:705240339969:web:1efba0394ee440cf8cd200",
+    measurementId: "G-WHLMQRG2GT"
+  };
+
   $(function() {
     burgerMenu();
     testimonialCarousel();
@@ -297,10 +328,10 @@
     var query = window.location.search.substring(1);
     var qs = parse_query_string(query);
     if (typeof qs.nama !== "undefined") {
-      $("#myModal").modal("show");
+      $("#inviteModal").modal("show");
       $(".ivite-name").html(qs.nama);
 
-      $("#myModal").on("hidden.bs.modal", tapOrClick);
+      $("#inviteModal").on("hidden.bs.modal", tapOrClick);
     }
 
     document
@@ -312,5 +343,89 @@
     document
       .getElementById("mainHeader")
       .addEventListener("scroll", tapOrClick, false);
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    firebase
+      .auth()
+      .signInAnonymously()
+      .catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        console.log("Error ", errorCode, errorMessage);
+        $(".row-wish").hide();
+      });
+    firebase
+      .database()
+      .ref("/wishes/")
+      .once("value")
+      .then(function(snapshot) {
+        $("#container-wishes").html("");
+        snapshot.forEach(function(childNodes) {
+          var wish_dom = $(".wish-message-item")
+            .first()
+            .clone();
+          wish_dom.find(".wish-message").html(childNodes.val().wish);
+          wish_dom.find(".wish-author").html(childNodes.val().nama);
+          $("#container-wishes").append(wish_dom.show());
+        });
+        $("#container-wishes").slick({
+          slidesToShow: 2,
+          autoplay: true,
+          dot: true
+        });
+      });
+    $(".form-wish").on("submit", function(e) {
+      e.preventDefault();
+      var form = $(this);
+      form.parsley().validate();
+      if (form.parsley().isValid()) {
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            var isAnonymous = user.isAnonymous;
+            var uid = user.uid;
+            firebase
+              .database()
+              .ref("wishes/" + uid)
+              .set({
+                nama: form.find('input[name="name"]').val(),
+                wish: form.find('input[name="wish"]').val()
+              });
+
+            $("#inviteModal").modal("show");
+            $(".ivite-name").html(form.find('input[name="name"]').val());
+            $(".invite-desc").html("Thank you for your lovely wedding message");
+            $(".form-wish").each(function() {
+              this.reset();
+            });
+            firebase
+              .database()
+              .ref("/wishes/")
+              .once("value")
+              .then(function(snapshot) {
+                $("#container-wishes").html("");
+                snapshot.forEach(function(childNodes) {
+                  console.log(wish_dom);
+                  var wish_dom = $(".wish-message-item")
+                    .first()
+                    .clone();
+                  wish_dom.find(".wish-message").html(childNodes.val().wish);
+                  wish_dom.find(".wish-author").html(childNodes.val().nama);
+                  $("#container-wishes").append(wish_dom.show());
+                });
+                $("#container-wishes").slick("unslick");
+                $("#container-wishes").slick({
+                  slidesToShow: 2,
+                  autoplay: true,
+                  dot: true
+                });
+              });
+          }
+        });
+      }
+    });
   });
 })();

@@ -298,9 +298,10 @@ img {
 #qbootstrap-story,
 #qbootstrap-people,
 #qbootstrap-when-where,
-#qbootstrap-started,
+#qbootstrap-wishes,
 #qbootstrap-gallery,
 #qbootstrap-testimonials,
+#qbootstrap-wishes,
 #qbootstrap-press {
   padding: 7em 0;
 }
@@ -311,9 +312,10 @@ img {
   #qbootstrap-story,
   #qbootstrap-people,
   #qbootstrap-when-where,
-  #qbootstrap-started,
+  #qbootstrap-wishes,
   #qbootstrap-gallery,
   #qbootstrap-testimonials,
+  #qbootstrap-wishes,
   #qbootstrap-press {
     padding: 5em 0;
   }
@@ -358,7 +360,7 @@ img {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .video-hero {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -1201,6 +1203,167 @@ img {
   margin-bottom: 20px !important;
 }
 
+#qbootstrap-wishes {
+  background: blueviolet;
+  z-index: 0;
+}
+#qbootstrap-wishes .overlay {
+  position: absolute !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.4);
+}
+#qbootstrap-wishes .section-heading {
+  margin-bottom: 0 !important;
+}
+#qbootstrap-wishes .section-heading h2 {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  #qbootstrap-wishes .section-heading h2 {
+    font-size: 30px;
+  }
+}
+#qbootstrap-wishes .section-heading.svg-sm .svg {
+  height: 180px;
+  margin-bottom: -50px;
+  padding: 0;
+}
+#qbootstrap-wishes .section-heading.colored .svg {
+  fill: #fff;
+}
+#qbootstrap-wishes .box-testimony {
+  margin-bottom: 2em;
+  float: left;
+}
+#qbootstrap-wishes .box-testimony a {
+  color: rgba(255, 255, 255, 0.5);
+}
+#qbootstrap-wishes .box-testimony a:hover,
+#qbootstrap-wishes .box-testimony a:focus,
+#qbootstrap-wishes .box-testimony a:active {
+  color: white;
+  text-decoration: none;
+}
+#qbootstrap-wishes .box-testimony blockquote {
+  padding-left: 0;
+  border-left: none;
+  padding: 40px;
+  background: #fff;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+#qbootstrap-wishes .box-testimony blockquote:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 40px;
+  border-top: 15px solid black;
+  border-top-color: #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+#qbootstrap-wishes .box-testimony blockquote .quote {
+  top: 0;
+  left: 10px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 0;
+  display: table;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  margin-top: -30px;
+  background: blueviolet;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#qbootstrap-wishes .box-testimony blockquote .end-quote {
+  bottom: 0;
+  right: -10px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 0;
+  display: table;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  margin-top: -30px;
+  background: blueviolet;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#qbootstrap-wishes .box-testimony blockquote .quote > span {
+  display: table-cell;
+  vertical-align: middle;
+}
+#qbootstrap-wishes .box-testimony blockquote p {
+  font-style: italic;
+}
+#qbootstrap-wishes .box-testimony .author {
+  line-height: 20px;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+}
+#qbootstrap-wishes .box-testimony .author .subtext {
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+}
+#qbootstrap-wishes .testimony-slide {
+  position: relative;
+  color: #fff !important;
+  width: 90%;
+  margin: 0 auto;
+}
+#qbootstrap-wishes .testimony-slide blockquote {
+  border: none;
+  position: relative;
+  padding: 0;
+  font-size: 30px;
+  font-family: "Clicker Script", cursive;
+  font-style: italic;
+}
+#qbootstrap-wishes .arrow-thumb {
+  position: absolute;
+  top: 40%;
+  display: block;
+  width: 100%;
+}
+#qbootstrap-wishes .arrow-thumb a {
+  font-size: 32px;
+  color: #dadada;
+}
+#qbootstrap-wishes .arrow-thumb a:hover,
+#qbootstrap-wishes .arrow-thumb a:focus,
+#qbootstrap-wishes .arrow-thumb a:active {
+  text-decoration: none;
+}
+#qbootstrap-wishes .owl-theme .owl-dots .owl-dot span {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+#qbootstrap-wishes .owl-theme .owl-dots .active span {
+  background: white !important;
+}
+#qbootstrap-wishes .qbootstrap-heading {
+  margin-bottom: 3em;
+}
+#qbootstrap-wishes .qbootstrap-heading h2 {
+  color: #fff;
+  margin-bottom: 20px !important;
+}
 .groom-men img {
   margin-bottom: 20px;
   -webkit-border-radius: 50%;
@@ -1292,36 +1455,36 @@ img {
   }
 }
 
-#qbootstrap-started {
+#qbootstrap-wishes {
   position: relative;
 }
-#qbootstrap-started .section-heading {
+#qbootstrap-wishes .section-heading {
   margin-bottom: 0 !important;
 }
-#qbootstrap-started .section-heading h2 {
+#qbootstrap-wishes .section-heading h2 {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  #qbootstrap-started .section-heading h2 {
+  #qbootstrap-wishes .section-heading h2 {
     font-size: 30px;
   }
 }
-#qbootstrap-started .section-heading h3 {
+#qbootstrap-wishes .section-heading h3 {
   color: rgba(255, 255, 255, 0.8);
 }
-#qbootstrap-started .section-heading .datewed {
+#qbootstrap-wishes .section-heading .datewed {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.7);
 }
-#qbootstrap-started .section-heading.svg-sm .svg {
+#qbootstrap-wishes .section-heading.svg-sm .svg {
   height: 180px;
   margin-bottom: -50px;
   padding: 0;
 }
-#qbootstrap-started .section-heading.colored .svg {
+#qbootstrap-wishes .section-heading.colored .svg {
   fill: #fff;
 }
-#qbootstrap-started .overlay {
+#qbootstrap-wishes .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1329,13 +1492,13 @@ img {
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-#qbootstrap-started .qbootstrap-heading h2 {
+#qbootstrap-wishes .qbootstrap-heading h2 {
   color: #fff;
 }
-#qbootstrap-started .qbootstrap-heading p {
+#qbootstrap-wishes .qbootstrap-heading p {
   color: rgba(255, 255, 255, 0.5);
 }
-#qbootstrap-started .form-control {
+#qbootstrap-wishes .form-control {
   background: rgba(255, 255, 255, 0.2);
   border: none !important;
   color: #fff;
@@ -1347,24 +1510,24 @@ img {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-#qbootstrap-started .form-control::-webkit-input-placeholder {
+#qbootstrap-wishes .form-control::-webkit-input-placeholder {
   color: #fff;
 }
-#qbootstrap-started .form-control:-moz-placeholder {
+#qbootstrap-wishes .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #fff;
 }
-#qbootstrap-started .form-control::-moz-placeholder {
+#qbootstrap-wishes .form-control::-moz-placeholder {
   /* Firefox 19+ */
   color: #fff;
 }
-#qbootstrap-started .form-control:-ms-input-placeholder {
+#qbootstrap-wishes .form-control:-ms-input-placeholder {
   color: #fff;
 }
-#qbootstrap-started .form-control:focus {
+#qbootstrap-wishes .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
-#qbootstrap-started .btn {
+#qbootstrap-wishes .btn {
   height: 54px;
   border: none !important;
   background: #e40d2d;
@@ -1375,17 +1538,17 @@ img {
   padding-left: 50px;
   padding-right: 50px;
 }
-#qbootstrap-started .form-inline .form-group {
+#qbootstrap-wishes .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
 }
-#qbootstrap-started .form-inline .form-group .form-control {
+#qbootstrap-wishes .form-inline .form-group .form-control {
   width: 100%;
 }
-#qbootstrap-started .qbootstrap-heading {
+#qbootstrap-wishes .qbootstrap-heading {
   margin-bottom: 30px;
 }
-#qbootstrap-started .qbootstrap-heading h2 {
+#qbootstrap-wishes .qbootstrap-heading h2 {
   margin-bottom: 0;
 }
 
