@@ -312,13 +312,14 @@
     alert(window.mobilecheck());
     if (window.mobilecheck()) {
       document
-        .getElementById("mySound")
+        .getElementById("mainHeader")
         .addEventListener("mouseup", tapOrClick, false);
       document
-        .getElementById("mySound")
+        .getElementById("mainHeader")
         .addEventListener("touchend", tapOrClick, false);
 
       function tapOrClick(e) {
+        alert("test");
         var mp3 = e.target;
         mp3.parentNode.getElementsByTagName("mySound")[0].play();
       }
