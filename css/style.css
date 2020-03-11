@@ -54,7 +54,9 @@ h6 {
   font-family: "Clicker Script", cursive;
   font-weight: 400;
 }
-
+img {
+  margin: auto;
+}
 ::-webkit-selection {
   color: #818892;
   background: #f9f6f0;
