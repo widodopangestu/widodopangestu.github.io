@@ -309,22 +309,17 @@
       $("#myModal").modal("show");
       $(".ivite-name").html(qs.nama);
     }
-    if (window.mobilecheck()) {
-      document
-        .getElementById("mainHeader")
-        .addEventListener("mouseup", tapOrClick, false);
-      document
-        .getElementById("mainHeader")
-        .addEventListener("touchend", tapOrClick, false);
-      document
-        .getElementById("mainHeader")
-        .addEventListener("scroll", tapOrClick, false);
-      function tapOrClick(e) {
-        if (document.getElementById("mySound").paused) {
-          document.getElementById("mySound").play();
-        }
-      }
-    } else {
+
+    document
+      .getElementById("mainHeader")
+      .addEventListener("mouseup", tapOrClick, false);
+    document
+      .getElementById("mainHeader")
+      .addEventListener("touchend", tapOrClick, false);
+    document
+      .getElementById("mainHeader")
+      .addEventListener("scroll", tapOrClick, false);
+    function tapOrClick(e) {
       if (document.getElementById("mySound").paused) {
         document.getElementById("mySound").play();
       }
