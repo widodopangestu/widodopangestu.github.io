@@ -316,11 +316,17 @@
       document
         .getElementById("mainHeader")
         .addEventListener("touchend", tapOrClick, false);
-
+      document
+        .getElementById("mainHeader")
+        .addEventListener("scroll", tapOrClick, false);
       function tapOrClick(e) {
         if (document.getElementById("mySound").paused) {
           document.getElementById("mySound").play();
         }
+      }
+    } else {
+      if (document.getElementById("mySound").paused) {
+        document.getElementById("mySound").play();
       }
     }
   });
