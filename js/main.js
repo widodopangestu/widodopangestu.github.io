@@ -280,10 +280,6 @@
     }
   }, 1000);
 
-  var bgVideo = function() {
-    $(".player").mb_YTPlayer();
-  };
-
   function parse_query_string(query) {
     var vars = query.split("&");
     var query_string = {};
@@ -317,7 +313,6 @@
     navigationSection();
     contentWayPoint();
     inlineSVG();
-    bgVideo();
     var query = window.location.search.substring(1);
     var qs = parse_query_string(query);
     if (typeof qs.nama !== "undefined") {
