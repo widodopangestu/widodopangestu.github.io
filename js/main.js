@@ -316,6 +316,35 @@
     measurementId: "G-WHLMQRG2GT"
   };
 
+  var slickConfig = {
+    slidesToShow: 2,
+    autoplay: true,
+    dot: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+  }
   $(function() {
     burgerMenu();
     testimonialCarousel();
@@ -372,11 +401,7 @@
           wish_dom.find(".wish-author").html(childNodes.val().nama);
           $("#container-wishes").append(wish_dom.show());
         });
-        $("#container-wishes").slick({
-          slidesToShow: 2,
-          autoplay: true,
-          dot: true
-        });
+        $("#container-wishes").slick(slickConfig);
       });
     $(".form-wish").on("submit", function(e) {
       e.preventDefault();
@@ -408,7 +433,6 @@
               .then(function(snapshot) {
                 $("#container-wishes").html("");
                 snapshot.forEach(function(childNodes) {
-                  console.log(wish_dom);
                   var wish_dom = $(".wish-message-item")
                     .first()
                     .clone();
@@ -417,11 +441,7 @@
                   $("#container-wishes").append(wish_dom.show());
                 });
                 $("#container-wishes").slick("unslick");
-                $("#container-wishes").slick({
-                  slidesToShow: 2,
-                  autoplay: true,
-                  dot: true
-                });
+                $("#container-wishes").slick(slickConfig);
               });
           }
         });
