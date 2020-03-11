@@ -84,12 +84,7 @@
 	</head>
 	<body>
 	<header role="banner" id="qbootstrap-header">
-		<div id="mainHeader" class="container">
-			<audio id="mySound" autoplay="autoplay">
-				<source src="sounds/theme1.ogg" type="audio/ogg">
-				<source src="sounds/theme1.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
+		<div class="container">
 			<!-- <div class="row"> -->
 		    <nav class="navbar navbar-default">
 	        <div class="navbar-header">
@@ -112,7 +107,12 @@
 	  </div>
 	</header>
 	
-	<div class="qbootstrap-hero" data-section="home">
+	<div id="mainHeader" class="qbootstrap-hero" data-section="home">
+		<audio id="mySound" autoplay="autoplay">
+			<source src="sounds/theme1.ogg" type="audio/ogg">
+			<source src="sounds/theme1.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 		<div class="qbootstrap-overlay"></div>
 		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5">
 			<div class="display-t">
