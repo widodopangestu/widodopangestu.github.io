@@ -344,7 +344,8 @@
           slidesToScroll: 1
         }
       }
-  }
+    ]
+  };
   $(function() {
     burgerMenu();
     testimonialCarousel();
