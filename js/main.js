@@ -307,14 +307,13 @@
   }
   // Document on load.
   $(function() {
-    console.log("Document on load");
     NProgress.start();
     burgerMenu();
     testimonialCarousel();
     sliderMain();
     clickMenu();
     parallax();
-    // windowScroll();
+    windowScroll();
     navigationSection();
     contentWayPoint();
     inlineSVG();
@@ -331,6 +330,4 @@
 $(window).load(function() {
   NProgress.done();
   NProgress.remove();
-  console.log("window load occurred!");
-  $("#sound").play();
 });
