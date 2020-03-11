@@ -325,3 +325,13 @@
     }
   });
 })();
+$(document).ready(function() {
+  NProgress.start();
+  console.log("document ready occurred!");
+});
+
+$(window).load(function() {
+  NProgress.done();
+  NProgress.remove();
+  console.log("window load occurred!");
+});
