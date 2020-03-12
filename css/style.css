@@ -1311,13 +1311,13 @@ img {
 #qbootstrap-wishes .box-testimony blockquote p {
   font-style: italic;
 }
-#qbootstrap-wishes .box-testimony .author {
+#qbootstrap-wishes .box-testimony .wish-author {
   line-height: 20px;
   color: white;
   font-size: 20px;
   margin-left: 20px;
 }
-#qbootstrap-wishes .box-testimony .author .subtext {
+#qbootstrap-wishes .box-testimony .wish-author .subtext {
   display: block;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
