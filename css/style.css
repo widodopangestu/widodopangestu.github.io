@@ -828,7 +828,7 @@ img {
   left: 10px;
   right: 10px;
   content: "";
-  background: #fef6f8;
+  background: #deb9c2;
   z-index: -1;
 }
 .couple img {
@@ -945,7 +945,7 @@ img {
   z-index: -1;
 }
 .timeline > li > .timeline-panel .overlay.overlay-2 {
-  background: #fef6f8;
+  background: #deb9c2;
 }
 .timeline > li > .timeline-badge {
   background-size: cover;
