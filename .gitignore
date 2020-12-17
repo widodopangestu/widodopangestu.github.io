@@ -1,5 +1,7 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-js/main.src.js
+.DS_Store
+.next
+.vscode
+out/
+node_modules
+yarn.lock
+package-lock.json
